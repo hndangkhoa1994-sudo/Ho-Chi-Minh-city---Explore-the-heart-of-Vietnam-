@@ -1,0 +1,181 @@
+/* General styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f9;
+  color: #333;
+  max-width: 85%;
+  margin: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Header styling */
+header {
+  background: linear-gradient(to right, #333, #444);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+/* Navigation menu */
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  display: block;
+  font-weight: bold;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  background-color: #ffd700;
+  color: #333;
+  border-radius: 4px;
+}
+
+/* Footer styling */
+footer {
+  background: linear-gradient(to right, #333, #444);
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.2);
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Article and sections */
+article {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+article h2 {
+  font-weight: bold;
+  color: #333;
+  border-left: 4px solid #ffd700;
+  padding-left: 10px;
+}
+
+article p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Image and figure styling */
+figure {
+  margin: 20px 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+figure img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+figcaption {
+  font-style: italic;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Responsive iframe styling */
+iframe {
+  width: 100%; /* Matches the width of images */
+  max-width: 770px; /* Same max-width as images */
+  height: 450px; /* Matches the height of images */
+  border: none;
+  border-radius: 12px; /* To match rounded corners of images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Same shadow effect */
+  margin: 20px 0; /* Ensure spacing between videos and other elements */
+}
+
+/* Two-column layout for flexibility */
+.two-column {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.two-column .left-column {
+  flex: 1 1 30%;
+}
+
+.two-column .right-column {
+  flex: 1 1 70%;
+}
+
+/* Text link hover effect */
+a {
+  color: #007acc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff6600;
+  text-decoration: underline;
+}
+
+/* Highlight active links */
+a.active {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* Section spacing */
+h2 {
+  scroll-margin-top: 220px; /* Adjust to match the height of your sticky header */
+}
+
+section {
+  padding: 0;
+  margin: 0;
+}
